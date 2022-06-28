@@ -1,14 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-namespace FindMaxMin
+namespace FindMaxValue
 {
 
 
 
     public class Program
     {
-        public int FindMaximum(int first, int second, int third)
+        //find max float value
+
+        public float FindMaximumFloat(float first, float second, float third)
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
@@ -31,16 +33,23 @@ namespace FindMaxMin
 
 
 
+
+
         static void Main(string[] args)
         {
             Program obj = new Program();
-            int maxValue = obj.FindMaximum(70, 35, 56);
-            Console.WriteLine(maxValue);
+            Console.WriteLine("Maximum value is : " + obj.FindMaximumFloat(70.2f, 45.3f, 12.5f));
+
             Console.ReadLine();
         }
 
 
     }
+
+
+
+
+
 
 }
 
